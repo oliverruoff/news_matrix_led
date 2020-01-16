@@ -1,4 +1,5 @@
-# news_matrix_led
+# news_matrix_led  
+![News Matrix LED](nml.gif)  
 Displays news on a led matrix.
 
 ## Prerequisites
@@ -42,6 +43,10 @@ Displays news on a led matrix.
 * Enable daily reboot at midnight (to automatically fix (e.g.) networking errors
   * `sudo crontab -e`
   * Enter as new line and save --> `0 0 * * * /sbin/reboot`
+
+## 3D printed shell
+
+* As shell for the led matrix and raspberry zero, you can use the shell.stl file
 
 ## Useful commands for process monitoring
 
