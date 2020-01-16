@@ -1,0 +1,12 @@
+[Unit]
+Description=LED Matrix to display news.
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/develop/raspi_led_matrix/led_matrix.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
