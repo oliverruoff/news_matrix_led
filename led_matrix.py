@@ -35,7 +35,7 @@ try:
         if (stop - start).total_seconds() > 300:
             news_str = il.get_tagesschau_rss_feed()
             start = datetime.now()
-        led_str = time_str + ' | ' + news_str + ' | ' + _get_own_ip()
+        led_str = time_str + ' | ' + news_str + _get_own_ip()
         show_message(device, led_str, fill="white",
                      font=proportional(LCD_FONT), scroll_delay=0.03)
         stop = datetime.now()
